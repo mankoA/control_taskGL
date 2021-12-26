@@ -1,0 +1,6 @@
+#!/bin/bash
+cp fsreminder.service /etc/systemd/system/
+cp fsreminder /etc/systemd/system/fsreminder
+systemctl daemon-reload
+systemctl enable fsreminder  
+systemctl start fsreminder

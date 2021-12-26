@@ -1,0 +1,10 @@
+#!/bin/bash
+#To use this script, install and configure Sendmail
+#Change the variable EMAIL and DEEGRE to your parameters
+CURENT=$(df / | grep / | awk '{ print $5}' | sed 's/%//g')
+EMAIL=andriymanko@gmail.com
+DEGREE=20
+if [ $CURENT -gt $DEGREE ]
+then
+	df / | mail -s "Hard disk partition degree greater than "$DEGREE"%" $EMAIL
+fi

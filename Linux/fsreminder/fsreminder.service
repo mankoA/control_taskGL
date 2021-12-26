@@ -1,0 +1,12 @@
+[Unit]
+Description = Remainder of free space
+After=network.target
+
+[Service]
+
+User=root
+ExecStart=/etc/systemd/system/fsreminder/fsreminder
+
+
+[Install]
+WantedBy=multi-user.target
