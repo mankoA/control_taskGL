@@ -32,7 +32,6 @@ float avginputarray(double array[],int size){
     return s/size;
 }
 
-
 int main(){
     int size=0;
     cout << "Enter size of array: "<<endl;

@@ -3,36 +3,17 @@
 using std::cout;
 using std::cin;
 using std::endl;
+template <typename T>
 
-float avginputarray(int array[],int size){
-    cout<<"The data type to enter must be: 'int'"<<endl;
-    int s=0;
+float avginputarray(T array[],int size){
+    cout<<"The data type to enter must be:"<<typeid(array).name()<<endl;
+    float s=0;
     for (int i=0;i<size;i++){
                 cin>>array[i];
                 s+=array[i]; 
     }    
     return s/size;
 }
-float avginputarray(float array[],int size){
-    cout<<"The data type to enter must be: 'float'"<<endl;
-    float s=0;
-    for (int i=0;i<size;i++){
-                cin>>array[i]; 
-                s+=array[i]; 
-    }    
-    return s/size;
-}
-float avginputarray(double array[],int size){
-    cout<<"The data type to enter must be: 'double'"<<endl;
-    double s=0;
-    for (int i=0;i<size;i++){
-                cin>>array[i]; 
-                s+=array[i]; 
-    }    
-    return s/size;
-}
-
-
 int main(){
     int size=0;
     cout << "Enter size of array: "<<endl;
