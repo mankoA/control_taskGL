@@ -59,6 +59,8 @@ int main(){
             cout<<"The average value of the array is: "<<avg<<endl;
             break;                       
         }
+        default:
+            break;
     }
       
     return 0;
