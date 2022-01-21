@@ -4,7 +4,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int avginputarray(int array[],int size){
+float avginputarray(int array[],int size){
     cout<<"The data type to enter must be: 'int'"<<endl;
     int s=0;
     for (int i=0;i<size;i++){
