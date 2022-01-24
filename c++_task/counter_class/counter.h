@@ -1,6 +1,6 @@
-#include <iostream>
 #ifndef COUNTER_H
 #define COUNTER_H
+#include <iostream>
     class Counter{
         private:
             int begin=0;
