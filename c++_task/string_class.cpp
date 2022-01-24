@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#define DEFAULT_SIZE 7;
+#define DEFAULT_SIZE 70;
 using std::cout;
 using std::cin;
 using std::endl;
