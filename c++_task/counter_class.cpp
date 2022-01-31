@@ -6,11 +6,13 @@ using std::endl;
 
 class Counter{
     private:
-        int begin=0;
-        int end=0;
-        int count=0;
+        int begin;
+        int end;
+        int count;
     public:  
-        Counter(){}
+        Counter():begin(0),end(0){
+           
+        }
         Counter(int min,int max){
             begin=min;
             end=max;
@@ -33,7 +35,7 @@ class Counter{
                 ++count;
             }
         }
-        int count_out(){
+        int count_out() const{
             return count;
         }    
 };
